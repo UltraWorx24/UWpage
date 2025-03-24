@@ -19,7 +19,7 @@ html, body {
 /* Header, Nav, Footer */
 header {
   background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
-  padding: 0rem 0;
+  padding: 1rem 0;
   margin: 0; /* Remove gap between header and hero */
 }
 
@@ -98,7 +98,7 @@ main {
 .hero {
   background-color: #222; /* Dark background fallback if no image */
   color: #fff;
-  padding: 0 0 0rem 0; /* Remove top and side padding, keep bottom padding */
+  padding: 0 0 4rem 0; /* Remove top and side padding, keep bottom padding */
   margin: 0; /* Remove gap between header and hero */
   background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
   background-size: 100%; /* Initial background size */
@@ -122,7 +122,7 @@ main {
   }
   100% {
     background-size: 150%;
-    background-position: center 80%; /* End position lower */
+    background-position: center 100%; /* End position lower */
   }
 }
 
