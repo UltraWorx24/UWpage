@@ -64,19 +64,38 @@ header {
     margin-bottom: 0.5rem;
   }
 
-  /* Light Grey Section (Second Footer) */
+/* Light Grey Section (Second Footer) */
 .second-footer {
   background-color: #f0f0f0; /* Light grey background */
   padding: 1rem 0;
   text-align: center;
-  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0; /* Remove gap between second footer and footer */
 }
 
-.second-footer p {
+.second-footer .contact-info {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.second-footer .contact-info p {
   color: #333; /* Dark grey text */
   font-size: 1rem;
+  margin: 0.5rem 0;
 }
-  
+
+.second-footer .certifications {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.second-footer .certifications img {
+  height: 50px; /* Adjust the size as needed */
+  margin-left: 1rem;
+}
+
   footer p {
     color: #fff;  /* White text in footer */
     font-size: 0.9rem;
