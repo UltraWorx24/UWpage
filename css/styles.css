@@ -1,0 +1,203 @@
+/* ==============================
+   1) Global Reset & Defaults
+   ============================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Main background: white */
+    color: #333;              /* Dark gray text */
+    text-align: center;       /* Center text by default */
+  }
+  
+  /* ==============================
+     2) Header, Nav, Footer
+     ============================== */
+  header {
+    background-color: #000;    /* Black header */
+    padding: 1rem 0;
+  }
+  
+  .logo-large {
+    width: 200px; /* Large logo in header */
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff0000;  /* Red nav links */
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #000;  /* Black footer */
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  .logo-small {
+    width: 80px;  /* Smaller logo in footer */
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer p {
+    color: #fff;  /* White text in footer */
+    font-size: 0.9rem;
+  }
+  
+  /* ==============================
+     3) Main Content Sections
+     ============================== */
+  main {
+    padding: 2rem 1rem;
+  }
+  
+  /* Hero section (Home page) */
+  .hero {
+    background-color: #222; /* Dark background fallback if no image */
+    color: #fff;
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
+    background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+  
+  /* Intro, Why Choose Us, Our Values sections */
+  .intro, .why-choose-us, .our-values, .tech-solutions, .approach, .track-record {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+  }
+  
+  /* Make section headings stand out */
+  .why-choose-us h2, .our-values h2, .approach h2, .track-record h2,
+  .tech-solutions h2, .intro h2 {
+    color: #cc0000;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Center them as needed or keep them left-aligned */
+  .why-choose-us ul, .our-values ul,
+  .services-list {
+    text-align: left; 
+    margin: 1rem 2rem;
+    list-style: none;
+  }
+  
+  .why-choose-us li, .our-values li,
+  .services-list li {
+    margin: 0.5rem 0;
+    padding-left: 1em;
+    position: relative;
+  }
+  
+  /* Optional bullet style (red checkmark symbol) */
+  .why-choose-us li::before,
+  .our-values li::before,
+  .services-list li::before {
+    content: "✓ ";
+    color: #cc0000; /* Red checkmark */
+    position: absolute;
+    left: 0;
+    margin-left: -1.2em;
+  }
+  
+  /* Images in figure with a caption */
+  figure {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+  
+  figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  /* ==============================
+     4) Contact Form
+     ============================== */
+  form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 2rem;
+  }
+  
+  form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ff0000; /* Red button */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* ==============================
+     5) Responsiveness
+     ============================== */
+  @media (max-width: 768px) {
+    /* Make the hero text smaller on mobile */
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    /* Form fields full width on small screens */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+    }
+  
+    /* Navigation spacing adjustments */
+    nav a {
+      display: inline-block;
+      margin: 0.5rem;
+    }
+  }
+  
