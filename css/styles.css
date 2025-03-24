@@ -21,6 +21,7 @@ header {
   background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
   padding: 1rem 0;
   margin: 0; /* Remove gap between header and hero */
+  width: 100vw; /* Ensure the header takes the full width of the viewport */
 }
 
 .logo-large {
