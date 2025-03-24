@@ -63,6 +63,19 @@ header {
     height: auto;
     margin-bottom: 0.5rem;
   }
+
+  /* Light Grey Section (Second Footer) */
+.second-footer {
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.second-footer p {
+  color: #333; /* Dark grey text */
+  font-size: 1rem;
+}
   
   footer p {
     color: #fff;  /* White text in footer */
@@ -85,7 +98,7 @@ header {
 
   background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
   background-size: 100%; /* Initial background size */
-  background-position: center;
+  background-position: center top; /* Start position */
   background-repeat: no-repeat;
 
   /* This line adds the slow zoom animation */
@@ -103,9 +116,11 @@ header {
 @keyframes slowZoom {
   0% {
     background-size: 100%;
+    background-position: center top; /* Start position */
   }
   100% {
     background-size: 150%;
+    background-position: center bottom; /* End position */
   }
 }
 
