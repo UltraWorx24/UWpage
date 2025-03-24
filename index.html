@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>Ultra Worx - Home</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </head>
 <body>
 
@@ -63,7 +73,7 @@
   <!-- Light Grey Section (Second Footer) -->
   <section class="second-footer">
     <div class="contact-info">
-      <p>Phone: 123-456-7890</p>
+      <p>Phone: 023 9433 1139</p>
       <p>Email: info@ultraworx.com</p>
     </div>
     <div class="certifications">
