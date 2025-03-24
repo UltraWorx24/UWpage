@@ -98,7 +98,7 @@ main {
 .hero {
   background-color: #222; /* Dark background fallback if no image */
   color: #fff;
-  padding: 4rem 1rem;
+  padding: 0 0 4rem 0; /* Remove top and side padding, keep bottom padding */
   margin: 0; /* Remove gap between header and hero */
   background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
   background-size: 100%; /* Initial background size */
