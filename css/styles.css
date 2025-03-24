@@ -103,7 +103,7 @@ main {
   width: 100vw; /* Ensure the hero section takes the full width of the viewport */
   background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
   background-size: cover; /* Cover the entire hero section */
-  background-position: center; /* Center the background image */
+  background-position: center 50%; /* Start position lower */
   background-repeat: no-repeat;
   animation: slowZoom 40s ease-in-out infinite alternate; /* Slower animation */
 }
@@ -119,11 +119,11 @@ main {
 @keyframes slowZoom {
   0% {
     background-size: 100%;
-    background-position: center; /* Start position */
+    background-position: center 50%; /* Start position lower */
   }
   100% {
     background-size: 150%;
-    background-position: center; /* End position */
+    background-position: center 100%; /* End position lower */
   }
 }
 
