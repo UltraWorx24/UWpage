@@ -65,24 +65,38 @@
     padding: 2rem 1rem;
   }
   
-  /* Hero section (Home page) */
-  .hero {
-    background-color: #222; /* Dark background fallback if no image */
-    color: #fff;
-    padding: 4rem 1rem;
-    margin-bottom: 2rem;
-    background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Hero section (Home page) */
+.hero {
+  background-color: #222; /* Dark background fallback if no image */
+  color: #fff;
+  padding: 4rem 1rem;
+  margin-bottom: 2rem;
+
+  background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* This line adds the slow zoom animation */
+  animation: slowZoom 30s ease-in-out infinite alternate;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Keyframes for the slow zoom animation */
+@keyframes slowZoom {
+  0% {
+      background-size: 100%;
   }
-  
-  .hero h1 {
-    font-size: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.4;
+  100% {
+      background-size: 110%;
   }
+}
   
   /* Intro, Why Choose Us, Our Values sections */
   .intro, .why-choose-us, .our-values, .tech-solutions, .approach, .track-record {
