@@ -100,9 +100,10 @@ main {
   color: #fff;
   padding: 0 0 4rem 0; /* Remove top and side padding, keep bottom padding */
   margin: 0; /* Remove gap between header and hero */
+  width: 100vw; /* Ensure the hero section takes the full width of the viewport */
   background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
-  background-size: 100%; /* Initial background size */
-  background-position: center 50%; /* Start position lower */
+  background-size: cover; /* Cover the entire hero section */
+  background-position: center; /* Center the background image */
   background-repeat: no-repeat;
   animation: slowZoom 40s ease-in-out infinite alternate; /* Slower animation */
 }
@@ -118,11 +119,11 @@ main {
 @keyframes slowZoom {
   0% {
     background-size: 100%;
-    background-position: center 50%; /* Start position lower */
+    background-position: center; /* Start position */
   }
   100% {
     background-size: 150%;
-    background-position: center 100%; /* End position lower */
+    background-position: center; /* End position */
   }
 }
 
