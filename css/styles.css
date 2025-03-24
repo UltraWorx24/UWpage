@@ -20,7 +20,7 @@
      2) Header, Nav, Footer
      ============================== */
  /* Define keyframes for the fade effect */
-@keyframes fadeBackground {
+ @keyframes fadeBackground {
   0% {
     background-color: #000; /* Black */
   }
@@ -29,12 +29,12 @@
   }
 }
 
-/* Apply the animation to the header */
+/* Apply the gradient background to the header */
 header {
-  background-color: #000;    /* Initial black header */
+  background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
   padding: 1rem 0;
-  animation: fadeBackground 5s ease-in-out infinite alternate;
 }
+
   .logo-large {
     width: 200px; /* Large logo in header */
     height: auto;
