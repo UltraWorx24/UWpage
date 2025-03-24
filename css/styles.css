@@ -117,11 +117,11 @@ header {
 
   background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
   background-size: 100%; /* Initial background size */
-  background-position: center top; /* Start position */
+  background-position: center 20%; /* Start position lower */
   background-repeat: no-repeat;
 
   /* This line adds the slow zoom animation */
-  animation: slowZoom 15s ease-in-out infinite alternate;
+  animation: slowZoom 30s ease-in-out infinite alternate; /* Slower animation */
 }
 
 .hero h1 {
@@ -135,11 +135,11 @@ header {
 @keyframes slowZoom {
   0% {
     background-size: 100%;
-    background-position: center top; /* Start position */
+    background-position: center 20%; /* Start position lower */
   }
   100% {
     background-size: 150%;
-    background-position: center bottom; /* End position */
+    background-position: center 80%; /* End position lower */
   }
 }
 
