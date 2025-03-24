@@ -72,7 +72,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0; /* Remove gap between second footer and footer */
+  margin: 0; /* Remove gap between second footer and footer */
 }
 
 .second-footer .contact-info {
@@ -96,10 +96,16 @@ header {
   margin-left: 1rem;
 }
 
-  footer p {
-    color: #fff;  /* White text in footer */
-    font-size: 0.9rem;
-  }
+footer {
+  background-color: #000;  /* Black footer */
+  padding: 1rem 0;
+  margin: 0; /* Remove gap between second footer and footer */
+}
+
+footer p {
+  color: #fff;  /* White text in footer */
+  font-size: 0.9rem;
+}
   
   /* ==============================
      3) Main Content Sections
