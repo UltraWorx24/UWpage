@@ -19,11 +19,22 @@
   /* ==============================
      2) Header, Nav, Footer
      ============================== */
-  header {
-    background-color: #000;    /* Black header */
-    padding: 1rem 0;
+ /* Define keyframes for the fade effect */
+@keyframes fadeBackground {
+  0% {
+    background-color: #000; /* Black */
   }
-  
+  100% {
+    background-color: #333; /* Off black */
+  }
+}
+
+/* Apply the animation to the header */
+header {
+  background-color: #000;    /* Initial black header */
+  padding: 1rem 0;
+  animation: fadeBackground 5s ease-in-out infinite alternate;
+}
   .logo-large {
     width: 200px; /* Large logo in header */
     height: auto;
