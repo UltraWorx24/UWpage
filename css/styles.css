@@ -282,7 +282,7 @@ main p:first-of-type {
 
 .carousel-track {
   display: flex;
-  transition: transform 1s ease-in-out;
+  animation: scroll 30s linear infinite;
 }
 
 .carousel img {
@@ -290,5 +290,13 @@ main p:first-of-type {
   margin: 0 50px; /* Increase the margin to space out the logos more */
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 /* carousel end */
