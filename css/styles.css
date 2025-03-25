@@ -43,7 +43,7 @@ header.scrolled {
 }
 
 header.scrolled .logo-large {
-  width: 50px; /* Smaller logo when scrolled */
+  width: 100px; /* Smaller logo when scrolled */
   height: auto; /* Maintain aspect ratio */
 }
 
