@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     window.addEventListener('scroll', function() {
         console.log('Scroll event fired, scrollY:', window.scrollY);
-        if (window.scrollY > 20) {
+        if (window.scrollY > 1) {  // Lower threshold for triggering sooner
             console.log('Adding scrolled class');
             header.classList.add('scrolled');
         } else {
