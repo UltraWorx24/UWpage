@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     window.addEventListener('scroll', function() {
         console.log('Scroll event fired, scrollY:', window.scrollY);
-        if (window.scrollY > 1) {  // Using 1 pixel threshold for immediate effect
+        if (window.scrollY > 10) {  // Using 1 pixel threshold for immediate effect
             console.log('Adding scrolled class');
             header.classList.add('scrolled');
         } else {
