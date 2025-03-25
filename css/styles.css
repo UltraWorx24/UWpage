@@ -117,7 +117,7 @@ main {
   color: #fff;
   padding: 0 0 4rem 0; /* Remove top and side padding, keep bottom padding */
   margin: 0; /* Remove gap between header and hero */
-  width: 150vw; /* Ensure the hero section takes the full width of the viewport */
+  width: 100vw; /* Ensure the hero section takes the full width of the viewport */
   height: 30vh; /* Make the hero section slightly bigger */
   left: 0; /* Ensure the hero section starts from the left edge */
   right: 0; /* Ensure the hero section ends at the right edge */
