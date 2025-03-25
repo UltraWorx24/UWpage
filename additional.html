@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Test</title>
+  <style>
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: background 0.3s;
+    }
+    header.scrolled {
+      background: #333;
+    }
+    .logo-large {
+      width: 200px;
+      transition: width 0.3s;
+    }
+    header.scrolled .logo-large {
+      width: 100px;
+    }
+    main {
+      margin-top: 100px;
+      height: 2000px; /* Force scrollable content */
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo-large" src="images/Ultra Worx Main Logo (CLRTRANS).png" alt="Ultra Worx Logo">
+  </header>
+  <main>
+    <p>Scroll down to test the header effect.</p>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Script loaded and DOM ready');
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', function() {
+            console.log('Scroll event fired, scrollY:', window.scrollY);
+            if (window.scrollY > 1) {
+                console.log('Adding scrolled class');
+                header.classList.add('scrolled');
+            } else {
+                console.log('Removing scrolled class');
+                header.classList.remove('scrolled');
+            }
+        });
+    });
+  </script>
+</body>
+</html>
