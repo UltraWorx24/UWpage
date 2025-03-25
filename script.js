@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         console.log('Scroll event fired, scrollY:', window.scrollY);
         if (window.scrollY > 20) {
+            console.log('Adding scrolled class');
             header.classList.add('scrolled');
         } else {
+            console.log('Removing scrolled class');
             header.classList.remove('scrolled');
         }
     });
