@@ -266,3 +266,25 @@ main p:first-of-type {
   }
 }
 
+
+.companies-carousel {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 150px;
+  margin: 0 10px;
+}

@@ -12,3 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    let index = 0;
+  
+    function moveCarousel() {
+      const items = track.children.length;
+      index = (index + 1) % items;
+      track.style.transform = `translateX(-${index * 160}px)`;
+    }
+  
+    setInterval(moveCarousel, 3000);
+  });
+  
