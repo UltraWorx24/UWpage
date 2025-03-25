@@ -266,6 +266,7 @@ main p:first-of-type {
   }
 }
 
+/* carousel start code */
 
 .companies-carousel {
   text-align: center;
@@ -281,10 +282,12 @@ main p:first-of-type {
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .carousel img {
   width: 150px;
-  margin: 0 10px;
+  margin: 0 50px; /* Increase the margin to space out the logos more */
 }
+
+/* carousel end */
