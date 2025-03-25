@@ -120,7 +120,7 @@ main {
   height: 30vh; /* Make the hero section slightly bigger */
   left: 0; /* Ensure the hero section starts from the left edge */
   right: 0; /* Ensure the hero section ends at the right edge */
-  background-image: url("images/hero.jpg"); /* Ensure the correct path to your hero image */
+  background-image: url("../images/hero.jpg"); /* Ensure the correct path to your hero image */
   background-size: cover; /* Cover the entire hero section */
   background-position: center 50%; /* Start position lower */
   background-repeat: no-repeat;
