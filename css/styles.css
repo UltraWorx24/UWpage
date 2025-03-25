@@ -117,7 +117,7 @@ main {
   padding: 0 0 4rem 0; /* Remove top and side padding, keep bottom padding */
   margin: 0; /* Remove gap between header and hero */
   width: 100vw; /* Ensure the hero section takes the full width of the viewport */
-  height: 40vh; /* make hero section taller
+  height: 20vh; /* make hero section taller
   background-image: url("../images/hero.jpg");  /* OPTIONAL hero image */
   background-size: cover; /* Cover the entire hero section */
   background-position: center 50%; /* Start position lower */
