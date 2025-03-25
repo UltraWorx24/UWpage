@@ -38,11 +38,12 @@ header.scrolled {
   width: 200px; /* Large logo in header */
   height: auto;
   margin-bottom: 0.5rem;
-  transition: width 0.3s ease; /* Smooth transition for width */
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for width and height */
 }
 
 header.scrolled .logo-large {
-  width: 100px; /* Smaller logo when scrolled */
+  width: 50px; /* Smaller logo when scrolled */
+  height: auto; /* Maintain aspect ratio */
 }
 
 nav a {
