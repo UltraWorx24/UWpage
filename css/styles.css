@@ -20,18 +20,19 @@ html, body {
 /* Header, Nav, Footer */
 header {
   background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
-  padding: 0.5rem 0;
+  padding: 1rem 0; /* Ensure initial padding is larger */
   margin: 0; /* Remove gap between header and hero */
   width: 100vw; /* Ensure the header takes the full width of the viewport */
   position: fixed; /* Lock the header to the top of the screen */
   top: 0; /* Position at the top */
   left: 0; /* Position at the left */
   z-index: 1000; /* Ensure the header is above other content */
-  transition: padding 0.3s ease; /* Smooth transition for padding */
+  transition: padding 0.3s ease, background 0.3s ease; /* Smooth transition for padding and background */
 }
 
 header.scrolled {
   padding: 0.5rem 0; /* Reduce padding when scrolled */
+  background: linear-gradient(to right, #333333, #666666); /* Darker gradient when scrolled */
 }
 
 .logo-large {
