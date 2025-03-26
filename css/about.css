@@ -3,18 +3,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html, body {
+}
+
+html, body {
     width: 100%;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #333;
     overflow-x: hidden;
-  }
-  
-  /* Header */
-  header {
+}
+
+/* Header */
+header {
     background: linear-gradient(to right, #000000, #808080);
     padding: 1rem 0;
     width: 100vw;
@@ -23,46 +23,58 @@
     left: 0;
     z-index: 1000;
     text-align: center;
-  }
-  
-  header img.logo-large {
+    transition: padding 0.3s ease, background 0.3s ease; /* Smooth transition for padding and background */
+}
+
+header.scrolled {
+    padding: 0.5rem 0; /* Reduce padding when scrolled */
+    background: linear-gradient(to right, #333333, #666666); /* Darker gradient when scrolled */
+}
+
+header img.logo-large {
     display: block;
     margin: 0 auto;
     width: 200px;
     height: auto;
-  }
-  
-  nav {
+    transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for width and height */
+}
+
+header.scrolled .logo-large {
+    width: 100px; /* Smaller logo when scrolled */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav {
     margin-top: 1rem;
-  }
-  
-  nav a {
+}
+
+nav a {
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
     color: #ff0000;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     text-decoration: underline;
-  }
-  
-  /* Our Story Section */
-  .our-story {
+}
+
+/* Our Story Section */
+.our-story {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 2rem;
     gap: 2rem;
     margin-top: 6rem; /* Push content below the fixed header */
-  }
-  
-  .our-story .text-content {
+}
+
+.our-story .text-content {
     flex: 1;
     text-align: left;
-  }
-  
-  .our-story .image-content {
+}
+
+.our-story .image-content {
     flex: 1;
     background-image: url("../images/team.jpg"); /* Fixed background image */
     background-attachment: fixed; /* Fixed effect */
@@ -72,32 +84,32 @@
     border-radius: 8px; /* Optional: Add rounded corners */
     background-repeat: no-repeat; /* Prevent the image from repeating */
 }
-  
-  /* Split Container */
-  .split-container {
+
+/* Split Container */
+.split-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     padding: 2rem;
-  }
-  
-  .split-container .text-content {
+}
+
+.split-container .text-content {
     flex: 1;
     padding: 1rem;
     background: #f9f9f9;
     border-radius: 8px;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #000;
     padding: 1rem 0;
     text-align: center;
     color: #fff;
-  }
-  
-  .logo-small {
+}
+
+.logo-small {
     width: 80px;
     height: auto;
     margin-bottom: 0.5rem;
-  }
+}
