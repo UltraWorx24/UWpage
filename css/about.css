@@ -54,6 +54,7 @@
     justify-content: space-between;
     padding: 2rem;
     gap: 2rem;
+    margin-top: 6rem; /* Push content below the fixed header */
   }
   
   .our-story .text-content {
