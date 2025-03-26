@@ -79,9 +79,9 @@ nav a:hover {
     background-image: url("../images/team.jpg"); /* Fixed background image */
     background-attachment: fixed; /* Fixed effect */
     background-size: contain; /* Ensure the entire image is visible */
-    background-position: top center; /* Align the image to the top center */
-    height: 500px; /* Increase height to show the full image */
-    border-radius: 8px; /* Optional: Add rounded corners */
+    background-position: top right; /* Align the image to the top center */
+    height: 700px; /* Increase height to show the full image */
+    border-radius: 6px; /* Optional: Add rounded corners */
     background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
