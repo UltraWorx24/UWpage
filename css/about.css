@@ -66,7 +66,7 @@
     flex: 1;
     background-image: url("../images/team.jpg"); /* Fixed background image */
     background-attachment: fixed; /* Fixed effect */
-    background-size: cover; /* Cover the entire container */
+    background-size: 70%; /* Cover the entire container */
     background-position: center; /* Center the image */
     height: 300px; /* Adjust height as needed */
     border-radius: 8px; /* Optional: Add rounded corners */
@@ -100,4 +100,3 @@
     height: auto;
     margin-bottom: 0.5rem;
   }
-  
