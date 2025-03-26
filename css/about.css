@@ -71,7 +71,12 @@ nav a:hover {
 
 .our-story .text-content {
     flex: 1;
-    text-align: left;
+    text-align: center; /* Center-align the text */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack the header and paragraph vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 1rem; /* Add padding for spacing */
 }
 
 .our-story .image-content {
