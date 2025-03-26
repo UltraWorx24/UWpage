@@ -11,46 +11,42 @@ html, body {
   background-color: #ffffff; /* Main background: white */
   color: #333;              /* Dark gray text */
   text-align: center;       /* Center text by default */
-  margin: 0;                /* Remove default margin */
-  padding: 0;               /* Remove default padding */
   overflow-x: hidden;       /* Prevent horizontal scrolling */
 }
 
 /* Header, Nav, Footer */
 header {
   background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
-  padding: 1rem 0; /* Ensure initial padding is larger */
-  margin: 0; /* Remove gap between header and hero */
-  width: 100vw; /* Ensure the header takes the full width of the viewport */
-  position: fixed; /* Lock the header to the top of the screen */
-  top: 0; /* Position at the top */
-  left: 0; /* Position at the left */
-  z-index: 1000; /* Ensure the header is above other content */
-  transition: padding 0.3s ease, background 0.3s ease; /* Smooth transition for padding and background */
+  padding: 1rem 0;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: padding 0.3s ease, background 0.3s ease;
 }
 
 header.scrolled {
-  padding: 0.5rem 0; /* Reduce padding when scrolled */
+  padding: 0.5rem 0;
   background: linear-gradient(to right, #333333, #666666); /* Darker gradient when scrolled */
 }
 
 .logo-large {
-  width: 200px; /* Large logo in header */
+  width: 200px;
   height: auto;
   margin-bottom: 0.5rem;
-  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for width and height */
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 header.scrolled .logo-large {
-  width: 100px; /* Smaller logo when scrolled */
-  height: auto; /* Maintain aspect ratio */
+  width: 100px;
 }
 
 nav a {
   margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
-  color: #ff0000;  /* Red nav links */
+  color: #ff0000;
 }
 
 nav a:hover {
@@ -58,75 +54,70 @@ nav a:hover {
 }
 
 footer {
-  background-color: #000;  /* Black footer */
+  background-color: #000;
   padding: 1rem 0;
-  margin: 0; /* Remove gap between second footer and footer */
 }
 
 .logo-small {
-  width: 80px;  /* Smaller logo in footer */
+  width: 80px;
   height: auto;
   margin-bottom: 0.5rem;
 }
 
 footer p {
-  color: #fff;  /* White text in footer */
+  color: #fff;
   font-size: 0.9rem;
 }
 
 /* Light Grey Section (Second Footer) */
 .second-footer {
-  background-color: #f0f0f0; /* Light grey background */
+  background-color: #f0f0f0;
   padding: 1rem 0;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0; /* Remove gap between second footer and footer */
 }
 
 .second-footer .contact-info {
   text-align: left;
-  margin-left: 0.9rem; /* Move closer by 0.1 part */
+  margin-left: 1rem;
 }
 
 .second-footer .contact-info p {
-  color: #333; /* Dark grey text */
+  color: #333;
   font-size: 1rem;
   margin: 0.5rem 0;
 }
 
 .second-footer .certifications {
   text-align: right;
-  margin-right: 0.9rem; /* Move closer by 0.1 part */
+  margin-right: 1rem;
 }
 
 .second-footer .certifications img {
-  height: 50px; /* Adjust the size as needed */
-  margin-left: 0.9rem; /* Move closer by 0.1 part */
+  height: 50px;
+  margin-left: 1rem;
 }
 
 /* Main Content Sections */
 main {
   padding: 2rem 1rem;
-  margin-top: 5rem; /* Add top margin to avoid content being hidden behind the fixed header */
+  margin-top: 5rem; /* Avoid content being hidden behind the fixed header */
 }
 
-/* Hero section (Home page) */
+/* Hero Section (Home Page) */
 .hero {
-  background-color: #222; /* Dark background fallback if no image */
+  background-color: #222;
   color: #fff;
-  padding: 0 0 4rem 0; /* Remove top and side padding, keep bottom padding */
-  margin: 0; /* Remove gap between header and hero */
-  width: 100vw; /* Ensure the hero section takes the full width of the viewport */
-  height: 30vh; /* Make the hero section slightly bigger */
-  left: 0; /* Ensure the hero section starts from the left edge */
-  right: 0; /* Ensure the hero section ends at the right edge */
-  background-image: url("../images/hero.jpg"); /* Ensure the correct path to your hero image */
-  background-size: cover; /* Cover the entire hero section */
-  background-position: center 50%; /* Start position lower */
+  padding: 0 0 4rem 0;
+  width: 100vw;
+  height: 30vh;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center 50%;
   background-repeat: no-repeat;
-  animation: slowZoom 40s ease-in-out infinite alternate; /* Ensure animation is applied */
+  animation: slowZoom 40s ease-in-out infinite alternate;
 }
 
 .hero h1 {
@@ -136,60 +127,51 @@ main {
   line-height: 1.4;
 }
 
-/* Keyframes for the slow zoom animation */
 @keyframes slowZoom {
   0% {
     background-size: 100%;
-    background-position: center 50%; /* Start position lower */
+    background-position: center 50%;
   }
   100% {
     background-size: 140%;
-    background-position: center 80%; /* End position lower */
+    background-position: center 80%;
   }
 }
 
-/* Intro, Why Choose Us, Our Values sections */
-.intro, .why-choose-us, .our-values, .tech-solutions, .approach, .track-record {
+/* Intro, Why Choose Us, Our Values Sections */
+.intro, .why-choose-us, .our-values, .approach, .track-record {
   max-width: 800px;
   margin: 2rem auto;
   text-align: left;
 }
 
-/* Make section headings stand out */
-.why-choose-us h2, .our-values h2, .approach h2, .track-record h2,
-.tech-solutions h2, .intro h2 {
+.why-choose-us h2, .our-values h2, .approach h2, .track-record h2 {
   color: #cc0000;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-/* Center them as needed or keep them left-aligned */
-.why-choose-us ul, .our-values ul,
-.services-list {
-  text-align: left; 
+.why-choose-us ul, .our-values ul {
+  text-align: left;
   margin: 1rem 2rem;
   list-style: none;
 }
 
-.why-choose-us li, .our-values li,
-.services-list li {
+.why-choose-us li, .our-values li {
   margin: 0.5rem 0;
   padding-left: 1em;
   position: relative;
 }
 
-/* Optional bullet style (red checkmark symbol) */
-.why-choose-us li::before,
-.our-values li::before,
-.services-list li::before {
+.why-choose-us li::before, .our-values li::before {
   content: "✓ ";
-  color: #cc0000; /* Red checkmark */
+  color: #cc0000;
   position: absolute;
   left: 0;
   margin-left: -1.2em;
 }
 
-/* Images in figure with a caption */
+/* Images in Figure with a Caption */
 figure {
   max-width: 600px;
   margin: 2rem auto;
@@ -218,9 +200,7 @@ form label {
   margin: 1rem 0 0.5rem;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
+form input[type="text"], form input[type="email"], form textarea {
   width: 300px;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -230,7 +210,7 @@ form button {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
-  background-color: #ff0000; /* Red button */
+  background-color: #ff0000;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -240,86 +220,56 @@ form button:hover {
   background-color: #cc0000;
 }
 
-/* Contact Us Page */
-main p:first-of-type {
-  margin-bottom: 2rem; /* Adjust the value as needed */
+/* Split-Screen Layout for About Page */
+.split-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-content {
+  flex: 1;
+  text-align: right;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
-  /* Make the hero text smaller on mobile */
   .hero h1 {
     font-size: 1.5rem;
   }
 
-  /* Form fields full width on small screens */
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
+  form input[type="text"], form input[type="email"], form textarea {
     width: 100%;
   }
 
-  /* Navigation spacing adjustments */
   nav a {
     display: inline-block;
     margin: 0.5rem;
   }
-}
 
-/* carousel start code */
-
-.companies-carousel {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.carousel {
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.carousel-track {
-  display: flex;
-  animation: scroll 100s linear infinite;
-}
-
-.carousel img {
-  width: 150px;
-  margin: 0 50px; /* Increase the margin to space out the logos more */
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
+  .split-container {
+    flex-direction: column;
+    text-align: center;
   }
-  100% {
-    transform: translateX(-50%);
+
+  .text-content, .image-content {
+    flex: none;
+    padding: 0;
   }
-}
 
-/* carousel end */
-
-/* Styles for the Our Story section on the About page */
-.about-page > h1, .about-page > p, .about-page > figure {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px; /* Add spacing between the text and the image */
-}
-
-.about-page > h1 {
-  flex: 1; /* Allow the header and paragraph to take up equal space */
-}
-
-.about-page > figure {
-  flex: 1; /* Allow the image to take up equal space */
-  text-align: right; /* Align the image to the right */
-}
-
-.about-page > figure img {
-  max-width: 100%; /* Ensure the image scales properly */
-  height: auto;
-  border-radius: 8px; /* Optional: Add rounded corners to the image */
+  .image-content img {
+    margin-top: 1rem;
+  }
 }
