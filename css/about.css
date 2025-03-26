@@ -8,27 +8,27 @@
   html, body {
     width: 100%;
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Main background: white */
-    color: #333;              /* Dark gray text */
-    overflow-x: hidden;       /* Prevent horizontal scrolling */
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
   }
   
   /* Header */
   header {
-    background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
+    background: linear-gradient(to right, #000000, #808080);
     padding: 1rem 0;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    text-align: center; /* Center the header content */
+    text-align: center;
   }
   
   header img.logo-large {
     display: block;
-    margin: 0 auto; /* Center the logo */
-    width: 200px; /* Adjust the size of the logo */
+    margin: 0 auto;
+    width: 200px;
     height: auto;
   }
   
@@ -40,7 +40,7 @@
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
-    color: #ff0000; /* Red nav links */
+    color: #ff0000;
   }
   
   nav a:hover {
@@ -50,22 +50,26 @@
   /* Our Story Section */
   .our-story {
     display: flex;
-    height: 100vh;
-    align-items: center;
-  }
-  
-  .our-story .image-content {
-    flex: 1;
-    background-image: url("../images/team.jpg"); /* Path to the team.jpg image */
-    background-attachment: fixed; /* Fixed background effect */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
   }
   
   .our-story .text-content {
     flex: 1;
-    padding: 4rem 2rem;
     text-align: left;
+  }
+  
+  .our-story .image-content {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .our-story .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
   
   /* Split Container */
