@@ -300,3 +300,26 @@ main p:first-of-type {
 }
 
 /* carousel end */
+
+/* Styles for the Our Story section on the About page */
+.about-page > h1, .about-page > p, .about-page > figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Add spacing between the text and the image */
+}
+
+.about-page > h1 {
+  flex: 1; /* Allow the header and paragraph to take up equal space */
+}
+
+.about-page > figure {
+  flex: 1; /* Allow the image to take up equal space */
+  text-align: right; /* Align the image to the right */
+}
+
+.about-page > figure img {
+  max-width: 100%; /* Ensure the image scales properly */
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
