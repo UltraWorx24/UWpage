@@ -64,13 +64,12 @@
   
   .our-story .image-content {
     flex: 1;
-    text-align: right;
-  }
-  
-  .our-story .image-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    background-image: url("../images/team.jpg"); /* Fixed background image */
+    background-attachment: fixed; /* Fixed effect */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    height: 300px; /* Adjust height as needed */
+    border-radius: 8px; /* Optional: Add rounded corners */
   }
   
   /* Split Container */
