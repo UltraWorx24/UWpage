@@ -66,10 +66,11 @@
     flex: 1;
     background-image: url("../images/team.jpg"); /* Fixed background image */
     background-attachment: fixed; /* Fixed effect */
-    background-size: 70%; /* Cover the entire container */
+    background-size: 30%; /* Cover the entire container */
     background-position: center; /* Center the image */
     height: 300px; /* Adjust height as needed */
     border-radius: 8px; /* Optional: Add rounded corners */
+    margin-left: -1rem; /* Move the image further to the left */
   }
   
   /* Split Container */
