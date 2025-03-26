@@ -246,6 +246,25 @@ form button:hover {
   border-radius: 8px;
 }
 
+/* Fixed Background for Our Story Section */
+.our-story {
+  background-image: url("../images/team.jpg"); /* Path to the team.jpg image */
+  background-attachment: fixed; /* Makes the background fixed */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  color: #fff; /* White text for contrast */
+  padding: 4rem 2rem; /* Add padding for spacing */
+  text-align: left; /* Align text to the left */
+}
+
+.our-story .text-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background for readability */
+  padding: 2rem;
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
   .split-container {
