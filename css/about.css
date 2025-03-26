@@ -1,0 +1,104 @@
+/* Global Reset & Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Main background: white */
+    color: #333;              /* Dark gray text */
+    text-align: center;       /* Center text by default */
+    overflow-x: hidden;       /* Prevent horizontal scrolling */
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
+    padding: 1rem 0; /* Ensure initial padding is larger */
+    width: 100vw; /* Ensure the header takes the full width of the viewport */
+    position: fixed; /* Lock the header to the top of the screen */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    z-index: 1000; /* Ensure the header is above other content */
+    transition: padding 0.3s ease, background 0.3s ease; /* Smooth transition for padding and background */
+  }
+  
+  header.scrolled {
+    padding: 0.5rem 0; /* Reduce padding when scrolled */
+    background: linear-gradient(to right, #333333, #666666); /* Darker gradient when scrolled */
+  }
+  
+  .logo-large {
+    width: 200px; /* Large logo in header */
+    height: auto;
+    margin-bottom: 0.5rem;
+    transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for width and height */
+  }
+  
+  header.scrolled .logo-large {
+    width: 100px; /* Smaller logo when scrolled */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff0000;  /* Red nav links */
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #000;  /* Black footer */
+    padding: 1rem 0;
+  }
+  
+  .logo-small {
+    width: 80px;  /* Smaller logo in footer */
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  footer p {
+    color: #fff;  /* White text in footer */
+    font-size: 0.9rem;
+  }
+  
+  /* Light Grey Section (Second Footer) */
+  .second-footer {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .second-footer .contact-info {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  
+  .second-footer .contact-info p {
+    color: #333; /* Dark grey text */
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .second-footer .certifications {
+    text-align: right;
+    margin-right: 1rem;
+  }
+  
+  .second-footer .certifications img {
+    height: 50px; /* Adjust the size as needed */
+    margin-left: 1rem;
+  }
+  
