@@ -286,9 +286,14 @@ main p:first-of-type {
 }
 
 .carousel img {
-  width: 150px;
-  margin: 0 50px; /* Increase the margin to space out the logos more */
+  height: 80px;         /* Set consistent visual height */
+  width: auto;          /* Maintain natural aspect ratio */
+  object-fit: contain;  /* Prevents any stretching or distortion */
+  max-width: 150px;     /* Prevents very wide logos from breaking layout */
+  margin: 0 50px;       /* Space out logos */
+  padding: 0.5rem;      /* Optional: add spacing inside the logo area */
 }
+
 
 @keyframes scroll {
   0% {
