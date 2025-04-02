@@ -1,168 +1,162 @@
 /* Global Reset & Defaults */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    width: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Main background: white */
-    color: #333;              /* Dark gray text */
-    text-align: center;       /* Center text by default */
-    margin: 0;                /* Remove default margin */
-    padding: 0;               /* Remove default padding */
-    overflow-x: hidden;       /* Prevent horizontal scrolling */
-  }
-  
-  /* Header, Nav, Footer */
-  header {
-    background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
-    padding: 1rem 0; /* Ensure initial padding is larger */
-    margin: 0; /* Remove gap between header and hero */
-    width: 100vw; /* Ensure the header takes the full width of the viewport */
-    position: fixed; /* Lock the header to the top of the screen */
-    top: 0; /* Position at the top */
-    left: 0; /* Position at the left */
-    z-index: 1000; /* Ensure the header is above other content */
-    transition: padding 0.3s ease, background 0.3s ease; /* Smooth transition for padding and background */
-  }
-  
-  header.scrolled {
-    padding: 0.5rem 0; /* Reduce padding when scrolled */
-    background: linear-gradient(to right, #333333, #666666); /* Darker gradient when scrolled */
-  }
-  
-  .logo-large {
-    width: 200px; /* Large logo in header */
-    height: auto;
-    margin-bottom: 0.5rem;
-    transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for width and height */
-  }
-  
-  header.scrolled .logo-large {
-    width: 100px; /* Smaller logo when scrolled */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    color: #ff0000;  /* Red nav links */
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  footer {
-    background-color: #000;  /* Black footer */
-    padding: 1rem 0;
-    margin: 0; /* Remove gap between second footer and footer */
-  }
-  
-  .logo-small {
-    width: 80px;  /* Smaller logo in footer */
-    height: auto;
-    margin-bottom: 0.5rem;
-  }
-  
-  footer p {
-    color: #fff;  /* White text in footer */
-    font-size: 0.9rem;
-  }
-  
-  /* Light Grey Section (Second Footer) */
-  .second-footer {
-    background-color: #f0f0f0; /* Light grey background */
-    padding: 1rem 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0; /* Remove gap between second footer and footer */
-  }
-  
-  .second-footer .contact-info {
-    text-align: left;
-    margin-left: 0.9rem; /* Move closer by 0.1 part */
-  }
-  
-  .second-footer .contact-info p {
-    color: #333; /* Dark grey text */
-    font-size: 1rem;
-    margin: 0.5rem 0;
-  }
-  
-  .second-footer .certifications {
-    text-align: right;
-    margin-right: 0.9rem; /* Move closer by 0.1 part */
-  }
-  
-  .second-footer .certifications img {
-    height: 50px; /* Adjust the size as needed */
-    margin-left: 0.9rem; /* Move closer by 0.1 part */
-  }
-  
-  /* Main Content Sections */
-  main {
-    padding: 2rem 1rem;
-    margin-top: 5rem; /* Add top margin to avoid content being hidden behind the fixed header */
-  }
-  /* Keyframes for the slow zoom animation */
-  @keyframes slowZoom {
-    0% {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Main background: white */
+  color: #333; /* Dark gray text */
+  text-align: center; /* Center text by default */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header, Nav, Footer */
+header {
+  background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
+  padding: 1rem 0; /* Ensure initial padding is larger */
+  width: 100vw; /* Ensure the header takes the full width of the viewport */
+  position: fixed; /* Lock the header to the top of the screen */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the header is above other content */
+  transition: padding 0.3s ease, background 0.3s ease; /* Smooth transition for padding and background */
+}
+
+header.scrolled {
+  padding: 0.5rem 0; /* Reduce padding when scrolled */
+  background: linear-gradient(to right, #333333, #666666); /* Darker gradient when scrolled */
+}
+
+.logo-large {
+  width: 200px; /* Large logo in header */
+  height: auto;
+  margin-bottom: 0.5rem;
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for width and height */
+}
+
+header.scrolled .logo-large {
+  width: 100px; /* Smaller logo when scrolled */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff0000; /* Red nav links */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #000; /* Black footer */
+  padding: 1rem 0;
+}
+
+.logo-small {
+  width: 80px; /* Smaller logo in footer */
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  color: #fff; /* White text in footer */
+  font-size: 0.9rem;
+}
+
+/* Light Grey Section (Second Footer) */
+.second-footer {
+  background-color: #f0f0f0; /* Light grey background */
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-footer .contact-info {
+  text-align: left;
+  margin-left: 0.9rem;
+}
+
+.second-footer .contact-info p {
+  color: #333; /* Dark grey text */
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.second-footer .certifications {
+  text-align: right;
+  margin-right: 0.9rem;
+}
+
+.second-footer .certifications img {
+  height: 50px; /* Adjust the size as needed */
+  margin-left: 0.9rem;
+}
+
+/* Main Content Sections */
+main {
+  padding: 2rem 1rem;
+  margin-top: 5rem; /* Add top margin to avoid content being hidden behind the fixed header */
+}
+
+/* Keyframes for the slow zoom animation */
+@keyframes slowZoom {
+  0% {
       background-size: 100%;
       background-position: center 50%; /* Start position lower */
-    }
-    100% {
+  }
+  100% {
       background-size: 140%;
       background-position: center 80%; /* End position lower */
-    }
+  }
+}
+
+/* Images in figure with a caption */
+figure {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+form button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  /* Make the hero text smaller on mobile */
+  .hero h1 {
+      font-size: 1.5rem;
   }
 
-  
-  /* Images in figure with a caption */
-  figure {
-    max-width: 600px;
-    margin: 2rem auto;
-  }
-  
-  figure img {
-    width: 100%;
-    height: auto;
-  }
-  
-  figcaption {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 0.5rem;
-  }
-   
-  form button:hover {
-    background-color: #cc0000;
-  }
-  
-  
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    /* Make the hero text smaller on mobile */
-    .hero h1 {
-      font-size: 1.5rem;
-    }
-  
-    /* Form fields full width on small screens */
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
+  /* Form fields full width on small screens */
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
       width: 100%;
-    }
-  
-    /* Navigation spacing adjustments */
-    nav a {
+  }
+
+  /* Navigation spacing adjustments */
+  nav a {
       display: inline-block;
       margin: 0.5rem;
-    }
   }
+}
