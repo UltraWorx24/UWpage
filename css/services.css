@@ -156,14 +156,12 @@ form button:hover {
   .hero h1 {
     font-size: 1.5rem;
   }
-
   /* Form fields full width on small screens */
   form input[type="text"],
   form input[type="email"],
   form textarea {
     width: 100%;
   }
-
   /* Navigation spacing adjustments */
   nav a {
     display: inline-block;
@@ -174,8 +172,6 @@ form button:hover {
 /* ============================================= */
 /* 6. Services Section (Fancy Expandable Cards) */
 /* ============================================= */
-
-/* Container for the service cards */
 .services-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -187,7 +183,6 @@ form button:hover {
   padding: 0 1rem;
 }
 
-/* Individual service cards */
 .service-card {
   background-color: #fff;
   border-radius: 4px;
@@ -199,13 +194,11 @@ form button:hover {
   text-align: left; /* Title and text left-aligned for clarity */
 }
 
-/* Hover effect */
 .service-card:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Service title */
 .service-card h2 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;

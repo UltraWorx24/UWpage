@@ -53,5 +53,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Move the carousel every 3 seconds (adjust as needed)
         setInterval(moveCarousel, 3000);
     }
+
+    /* ================================
+       3) SERVICE CARD TOGGLE LOGIC
+    ================================ */
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Toggle the 'active' class to expand/collapse the detail text
+            card.classList.toggle('active');
+        });
+    });
 });
 
