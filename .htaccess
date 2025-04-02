@@ -1,13 +1,12 @@
 RewriteEngine On
 
-# Redirect the root URL to /home (so ultra-worx.com goes to ultra-worx.com/home)
+# Redirect requests for /index.html to /home (removing .html from the URL)
+RewriteRule ^index\.html$ /home [R=301,L]
+
+# Redirect the root URL (/) to /home
 RewriteRule ^$ /home [R=301,L]
 
 # Internally rewrite URLs by appending .html if the file exists
-
-# If the request is not for a directory...
 RewriteCond %{REQUEST_FILENAME} !-d
-# ...and if adding .html to the request points to a valid file...
 RewriteCond %{REQUEST_FILENAME}\.html -f
-# ...then internally rewrite the URL to include .html.
 RewriteRule ^(.*)$ $1.html [NC,L]
