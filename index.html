@@ -8,12 +8,27 @@
 </head>
 <body>
 
-  <!-- HEADER (with large logo & navigation) -->
+  <!-- HEADER (with large logo, navigation, and burger menu) -->
   <header>
-    <!-- Replace this src with your actual logo filename if different -->
     <img class="logo-large" src="images/Ultra Worx Main Logo (CLRTRANS).png" alt="Ultra Worx Logo">
 
-    <nav>
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Burger Menu for Mobile -->
+    <div class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="about.html">About Us</a>
@@ -23,7 +38,7 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- Hero / Tagline Section (with a placeholder background image) -->
+    <!-- Hero / Tagline Section -->
     <section class="hero">
       <h1>Precision in Every Task,<br>Excellence in Every Service.</h1>
     </section>
@@ -73,20 +88,6 @@
         <img src="images/company5.png" alt="Company 5"> 
         <img src="images/company6.png" alt="Company 6"> 
         <img src="images/company7.png" alt="Company 7"> 
-        <img src="images/company1.png" alt="Company 1">
-        <img src="images/company2.png" alt="Company 2">
-        <img src="images/company3.png" alt="Company 3">
-        <img src="images/company4.png" alt="Company 4">
-        <img src="images/company5.png" alt="Company 5"> 
-        <img src="images/company6.png" alt="Company 6"> 
-        <img src="images/company7.png" alt="Company 7"> 
-        <img src="images/company1.png" alt="Company 1">
-        <img src="images/company2.png" alt="Company 2">
-        <img src="images/company3.png" alt="Company 3">
-        <img src="images/company4.png" alt="Company 4">
-        <img src="images/company5.png" alt="Company 5"> 
-        <img src="images/company6.png" alt="Company 6"> 
-        <img src="images/company7.png" alt="Company 7"> 
       </div>
     </div>
   </section>
@@ -103,13 +104,13 @@
     </div>
   </section>
   
-  <!-- FOOTER (with smaller logo) -->
+  <!-- FOOTER -->
   <footer>
     <img class="logo-small" src="images/Ultra Worx Main Logo (CLRTRANS).png" alt="Ultra Worx Logo">
     <p>&copy; 2024 Ultra Worx. All rights reserved.</p>
   </footer>
 
-  <!--Start of Tawk.to Script-->
+  <!-- Tawk.to Script -->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -121,7 +122,6 @@
       s0.parentNode.insertBefore(s1,s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
 
 </body>
 </html>
