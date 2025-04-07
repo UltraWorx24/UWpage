@@ -312,55 +312,42 @@ button:nth-child(7) {
 }
 
 /* ============================================= */
-/* 9. Services Gallery (Collage with Absolute Positioning) */
+/* 9. Services Gallery (Fixed Background Effect) */
 /* ============================================= */
 .services-gallery {
-  position: relative;  /* Establishes a reference for absolute positioning */
+  position: relative;
   width: 100%;
-  height: 600px;       /* Set the height of the gallery section */
-  margin: 2rem 0;      /* Optional spacing around the gallery */
-  overflow: hidden;
+  height: 600px; /* Adjust height as needed */
+  margin: 2rem 0;
+  background-image: 
+    url('../images/services.jpg'),
+    url('../images/services2.jpg'),
+    url('../images/services3.jpg'),
+    url('../images/services4.jpg'),
+    url('../images/services5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Images remain fixed relative to the viewport */
+  /* Positions for each image */
+  background-position: 
+    left 5% top 150px,
+    left 30% top 200px,
+    left 55% top 150px,
+    left 80% top 250px,
+    left 90% top 300px;
+  /* Updated sizes: each value multiplied by ~3x */
+  background-size: 
+    450px auto,
+    510px auto,
+    570px auto,
+    480px auto,
+    420px auto;
 }
 
-.gallery-photo {
-  position: absolute;  /* Position relative to .services-gallery */
-  object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.gallery-photo:hover {
-  transform: scale(1.05);
-}
-
-/* Updated sizes and positions for a larger collage effect */
-.services1 {
-  top: 50px;
-  left: 5%;
-  width: 150px;
-}
-
-.services2 {
-  top: 120px;
-  left: 30%;
-  width: 170px;
-}
-
-.services3 {
-  top: 80px;
-  left: 55%;
-  width: 190px;
-}
-
-.services4 {
-  top: 180px;
-  left: 80%;
-  width: 160px;
-}
-
-.services5 {
-  top: 220px;
-  left: 90%;
-  width: 140px;
+/* Optional: Overlay heading styling for the gallery */
+.gallery-heading {
+  position: relative;
+  z-index: 1; /* Ensure text appears above the backgrounds */
+  padding-top: 20px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
