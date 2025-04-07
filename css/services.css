@@ -322,11 +322,11 @@ button:nth-child(7) {
     url('../images/services3.jpg'),    /* Middle image */
     url('../images/services5.jpg');    /* Right image */
   background-repeat: no-repeat;
-  /* Default: scroll; JS will add fixed-active when in view */
-  background-attachment: scroll;
+  /* Set background-attachment to fixed always */
+  background-attachment: fixed;
   /* Arrange images evenly:
      - Left image at 20% from left
-     - Middle image centered at 50%
+     - Middle image centered
      - Right image at 80% from left */
   background-position: 
     left 20% top 200px,
@@ -337,11 +337,6 @@ button:nth-child(7) {
     350px auto,
     350px auto,
     350px auto;
-}
-
-/* When the gallery is half in view, JS adds fixed-active to switch the backgrounds to fixed */
-.services-gallery.fixed-active {
-  background-attachment: fixed;
 }
 
 /* Optional: Overlay heading for the gallery */
