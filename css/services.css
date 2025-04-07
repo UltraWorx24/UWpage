@@ -311,45 +311,43 @@ button:nth-child(7) {
 /* ============================================= */
 /* 9. Services Gallery (Fixed Background Collage) */
 /* ============================================= */
-/*
-   This section uses multiple background images.
-   The default is set to "scroll", but when the section is half in view,
-   JavaScript adds the "fixed-active" class to switch background-attachment to "fixed".
-   Images are arranged with image 1 and image 4 stacked (with a small gap), and the other images side by side.
-*/
 .services-gallery {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 700px; /* Increased height to accommodate larger images */
   margin: 2rem 0;
+  /* Apply five background images */
   background-image: 
-    url('../images/services.jpg'),     /* Image 1 */
-    url('../images/services2.jpg'),    /* Image 2 */
-    url('../images/services3.jpg'),    /* Image 3 */
-    url('../images/services4.jpg'),    /* Image 4, to be stacked under image 1 */
-    url('../images/services5.jpg');    /* Image 5 */
+    url('../images/services.jpg'),
+    url('../images/services2.jpg'),
+    url('../images/services3.jpg'),
+    url('../images/services4.jpg'),
+    url('../images/services5.jpg');
   background-repeat: no-repeat;
-  background-attachment: scroll; /* Default scroll behavior */
+  /* Default behavior is scroll; JS will add fixed-active when needed */
+  background-attachment: scroll;
+  /* Arrange images side by side in one row (all at the same vertical level) */
   background-position: 
-    left 10% top 150px,    /* Image 1 */
-    left 40% top 150px,    /* Image 2 */
-    left 60% top 150px,    /* Image 3 */
-    left 10% top 400px,    /* Image 4, stacked under Image 1 with a small gap */
-    left 40% top 400px;    /* Image 5 */
+    left 5% top 200px,   /* Image 1 */
+    left 25% top 200px,  /* Image 2 */
+    left 45% top 200px,  /* Image 3 */
+    left 65% top 200px,  /* Image 4 */
+    left 85% top 200px;  /* Image 5 */
+  /* Increase sizes: all images are now 350px wide */
   background-size: 
-    250px auto,          /* Image 1 size */
-    250px auto,          /* Image 2 */
-    250px auto,          /* Image 3 */
-    250px auto,          /* Image 4 */
-    250px auto;          /* Image 5 */
+    350px auto,
+    350px auto,
+    350px auto,
+    350px auto,
+    350px auto;
 }
 
-/* When the gallery is in view, JavaScript adds fixed-active to switch to fixed background */
+/* When the gallery is in view, JavaScript adds this class to switch background-attachment to fixed */
 .services-gallery.fixed-active {
   background-attachment: fixed;
 }
 
-/* Optional: Overlay heading for the gallery */
+/* Optional: Overlay heading styling for the gallery */
 .gallery-heading {
   position: relative;
   z-index: 1;
