@@ -314,38 +314,37 @@ button:nth-child(7) {
 .services-gallery {
   position: relative;
   width: 100%;
-  height: 700px; /* Increased height to accommodate larger images */
+  height: 700px; /* Adjust height as needed */
   margin: 2rem 0;
-  /* Apply five background images */
+  /* Use three background images */
   background-image: 
-    url('../images/services2.jpg'),
-    url('../images/services3.jpg'),
-    url('../images/services5.jpg');
+    url('../images/services2.jpg'),    /* Left image */
+    url('../images/services3.jpg'),    /* Middle image */
+    url('../images/services5.jpg');    /* Right image */
   background-repeat: no-repeat;
-  /* Default behavior is scroll; JS will add fixed-active when needed */
+  /* Default: scroll; JS will add fixed-active when in view */
   background-attachment: scroll;
-  /* Arrange images side by side in one row (all at the same vertical level) */
+  /* Arrange images evenly:
+     - Left image at 20% from left
+     - Middle image centered at 50%
+     - Right image at 80% from left */
   background-position: 
-    left 5% top 200px,   /* Image 1 */
-    left 25% top 200px,  /* Image 2 */
-    left 45% top 200px,  /* Image 3 */
-    left 65% top 200px,  /* Image 4 */
-    left 85% top 200px;  /* Image 5 */
-  /* Increase sizes: all images are now 350px wide */
+    left 20% top 200px,
+    center top 200px,
+    left 80% top 200px;
+  /* Set sizes for a larger, evenly spaced layout */
   background-size: 
-    350px auto,
-    350px auto,
     350px auto,
     350px auto,
     350px auto;
 }
 
-/* When the gallery is in view, JavaScript adds this class to switch background-attachment to fixed */
+/* When the gallery is half in view, JS adds fixed-active to switch the backgrounds to fixed */
 .services-gallery.fixed-active {
   background-attachment: fixed;
 }
 
-/* Optional: Overlay heading styling for the gallery */
+/* Optional: Overlay heading for the gallery */
 .gallery-heading {
   position: relative;
   z-index: 1;
