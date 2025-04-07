@@ -299,3 +299,37 @@ button:nth-child(6) {
 button:nth-child(7) {
   background: linear-gradient(to right, #404040, #202020); /* Very dark grey */
 }
+
+/* Kee Safety Partner Section */
+.kee-safety-partner {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 800px; /* Limit the width */
+}
+
+.kee-safety-partner h2 {
+  font-size: 1.8rem;
+  color: #cc0000; /* Red header color */
+  margin-bottom: 1rem;
+}
+
+.kee-safety-partner p {
+  font-size: 1rem;
+  color: #555; /* Dark grey text */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.kee-safety-partner figure {
+  margin: 0 auto;
+  max-width: 200px; /* Limit the logo size */
+}
+
+.kee-safety-partner img {
+  width: 100%;
+  height: auto;
+}
