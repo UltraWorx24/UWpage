@@ -22,29 +22,29 @@ html, body {
 header {
   background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
   padding: 1rem 0; /* Ensure initial padding is larger */
-  width: 100vw; /* Ensure the header takes the full width of the viewport */
-  position: fixed; /* Lock the header to the top of the screen */
+  width: 100vw; /* Full width of the viewport */
+  position: fixed; /* Lock header to top */
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensure the header is above other content */
-  transition: padding 0.3s ease, background 0.3s ease; /* Smooth transition for padding and background */
+  z-index: 1000; /* Ensure header is above other content */
+  transition: padding 0.3s ease, background 0.3s ease; /* Smooth transitions */
 }
 
 header.scrolled {
-  padding: 0.5rem 0; /* Reduce padding when scrolled */
-  background: linear-gradient(to right, #333333, #666666); /* Darker gradient when scrolled */
+  padding: 0.5rem 0; /* Reduced padding when scrolled */
+  background: linear-gradient(to right, #333333, #666666); /* Darker gradient */
 }
 
 .logo-large {
   width: 200px; /* Large logo in header */
   height: auto;
   margin-bottom: 0.5rem;
-  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for width and height */
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 header.scrolled .logo-large {
   width: 100px; /* Smaller logo when scrolled */
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
 }
 
 nav a {
@@ -103,7 +103,7 @@ footer p {
 }
 
 .second-footer .certifications img {
-  height: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust size as needed */
   margin-left: 0.9rem;
 }
 
@@ -112,10 +112,10 @@ footer p {
 /* ============================================= */
 main {
   padding: 2rem 1rem;
-  margin-top: 5rem; /* Add top margin to avoid content behind fixed header */
+  margin-top: 5rem; /* Avoid content behind fixed header */
 }
 
-/* Keyframes for the slow zoom animation (if used by hero images or backgrounds) */
+/* Keyframes for slow zoom animation (if used) */
 @keyframes slowZoom {
   0% {
     background-size: 100%;
@@ -152,7 +152,7 @@ form button:hover {
 /* 5. Responsiveness */
 /* ============================================= */
 @media (max-width: 768px) {
-  /* Make the hero text smaller on mobile */
+  /* Adjust hero text size on mobile */
   .hero h1 {
     font-size: 1.5rem;
   }
@@ -205,7 +205,7 @@ form button:hover {
   color: #333;
 }
 
-/* The hidden detail text */
+/* Hidden detail text */
 .service-detail {
   max-height: 0;
   overflow: hidden;
@@ -214,61 +214,38 @@ form button:hover {
   color: #555;
 }
 
-/* When the card is "active", the detail is revealed */
+/* Reveal detail text when active */
 .service-card.active .service-detail {
   margin-top: 0.5rem;
-  max-height: 500px; /* Adjust as needed for the length of your text */
+  max-height: 500px; /* Adjust as needed */
   transition: max-height 0.6s ease;
 }
-/* Button Styles */
-button {
-  background: linear-gradient(to bottom, #ff4d4d, #cc0000); /* Gradient for a slight tint */
-  color: #fff; /* White text */
-  border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 0.75rem 1.5rem; /* Add padding for size */
-  font-size: 1rem; /* Adjust font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
-}
 
-/* Hover Effect */
-button:hover {
-  background: linear-gradient(to bottom, #cc0000, #990000); /* Darker gradient on hover */
-  transform: translateY(-2px); /* Slight lift effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
-/* Active/Pressed Effect */
-button:active {
-  background: linear-gradient(to bottom, #990000, #660000); /* Even darker gradient */
-  transform: translateY(0); /* Reset lift effect */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
-}
-/* Button Styles */
+/* ============================================= */
+/* 7. Button Styles */
+/* ============================================= */
 button {
   background: linear-gradient(to right, #ffffff, #d3d3d3); /* Default gradient */
-  color: #333; /* Dark text for contrast */
-  border: none; /* Remove default border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 0.75rem 1.5rem; /* Add padding for size */
-  font-size: 1rem; /* Adjust font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  color: #333; /* Dark text */
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 /* Hover Effect */
 button:hover {
-  transform: translateY(-2px); /* Slight lift effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Active/Pressed Effect */
 button:active {
-  transform: translateY(0); /* Reset lift effect */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* Specific Gradients for Each Button */
@@ -300,7 +277,9 @@ button:nth-child(7) {
   background: linear-gradient(to right, #404040, #202020); /* Very dark grey */
 }
 
-/* Kee Safety Partner Section */
+/* ============================================= */
+/* 8. Kee Safety Partner Section */
+/* ============================================= */
 .kee-safety-partner {
   background-color: #f9f9f9; /* Light grey background */
   padding: 2rem 1rem;
@@ -326,10 +305,11 @@ button:nth-child(7) {
 
 .kee-safety-partner figure {
   margin: 0 auto;
-  max-width: 200px; /* Limit the logo size */
+  max-width: 200px; /* Limit logo size */
 }
 
 .kee-safety-partner img {
   width: 100%;
   height: auto;
 }
+
