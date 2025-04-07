@@ -236,13 +236,11 @@ button {
   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect */
 button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Active/Pressed Effect */
 button:active {
   transform: translateY(0);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
@@ -313,3 +311,18 @@ button:nth-child(7) {
   height: auto;
 }
 
+/* ============================================= */
+/* 9. Services Gallery (Fixed, Intertwined Photos) */
+/* ============================================= */
+/* Gallery Container (optional) */
+.services-gallery {
+  position: relative; /* Container in normal flow */
+  width: 100%;
+  height: 600px;      /* Set overall height for the gallery area */
+}
+
+/* Fixed gallery images */
+.gallery-photo {
+  position: fixed; /* Fixed relative*
+
+  
