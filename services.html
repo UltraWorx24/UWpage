@@ -8,22 +8,6 @@
   <link rel="stylesheet" href="css/services.css">
   <!-- Link to the JavaScript file -->
   <script src="script.js" defer></script>
-  <script>
-    // When the gallery section is at least half visible, add the 'fixed-active' class.
-    document.addEventListener("DOMContentLoaded", function () {
-      const gallery = document.querySelector('.services-gallery');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.intersectionRatio >= 0.5) {
-            gallery.classList.add('fixed-active');
-          } else {
-            gallery.classList.remove('fixed-active');
-          }
-        });
-      }, { threshold: 0.5 });
-      observer.observe(gallery);
-    });
-  </script>
 </head>
 <body>
 
@@ -125,9 +109,10 @@
     </div>
     <!-- END SERVICES SECTION -->
 
-    <!-- SERVICES GALLERY (Fixed Background Collage) -->
-    <!-- This section uses multiple background images to create a fixed collage effect -->
+    <!-- SERVICES GALLERY (Sticky Background Collage) -->
     <section class="services-gallery">
+      <!-- This div will have the fixed (sticky) background collage -->
+      <div class="gallery-bg"></div>
       <h2 class="gallery-heading">Our Work in Action</h2>
     </section>
 

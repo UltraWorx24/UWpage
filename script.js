@@ -64,5 +64,21 @@ document.addEventListener('DOMContentLoaded', function() {
             card.classList.toggle('active');
         });
     });
+    
+    /* ================================
+       4) SERVICES GALLERY FIXED-BACKGROUND TOGGLE
+    ================================ */
+    const gallery = document.querySelector('.services-gallery');
+    if(gallery) {
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if(entry.intersectionRatio >= 0.5) {
+                  gallery.classList.add('fixed-active');
+              } else {
+                  gallery.classList.remove('fixed-active');
+              }
+          });
+      }, { threshold: 0.5 });
+      observer.observe(gallery);
+    }
 });
-
