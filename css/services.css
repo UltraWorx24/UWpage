@@ -312,40 +312,59 @@ button:nth-child(7) {
 }
 
 /* ============================================= */
-/* 9. Services Gallery with Fixed Background Effect */
+/* 9. Services Gallery (Fixed, Intertwined Photos) */
 /* ============================================= */
 .services-gallery {
-  position: relative;
-  height: 600px; /* Adjust height as needed */
-  /* Apply multiple background images; each image's position and size can be individually controlled */
-  background-image: 
-    url('images/services.jpg'),
-    url('images/services2.jpg'),
-    url('images/services3.jpg'),
-    url('images/services4.jpg'),
-    url('images/services5.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Makes the background images stay in place when scrolling */
-  /* Set individual positions for each background image */
-  background-position: 
-    left 5% top 100px,
-    left 30% top 150px,
-    left 55% top 100px,
-    left 80% top 200px;
-  /* Set sizes for each background image */
-  background-size: 
-    200px auto,
-    220px auto,
-    240px auto,
-    180px auto;
+  position: relative;  /* Container for logical grouping */
+  width: 100%;
+  height: 600px;       /* Set overall gallery area height */
+  z-index: 0;
 }
 
-/* Optional: Styling for the gallery heading (if used) */
-.gallery-heading {
-  position: relative;
-  z-index: 1; /* Ensure the heading is above the background images */
-  padding-top: 20px;
-  color: #fff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+/* Fixed gallery images – scaled down to about a third */
+.gallery-photo {
+  position: fixed;  /* Remains stationary when scrolling */
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: -1; /* Place behind other content */
 }
 
+.gallery-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Individual image positions and sizes (approximately one-third scale) */
+.services1 {
+  top: 150px;
+  left: 5%;
+  width: 80px;
+}
+
+.services2 {
+  top: 200px;
+  left: 30%;
+  width: 90px;
+}
+
+.services3 {
+  top: 150px;
+  left: 55%;
+  width: 100px;
+}
+
+.services4 {
+  top: 250px;
+  left: 80%;
+  width: 70px;
+}
+
+/* Uncomment below if you need a fifth image */
+/*
+.services5 {
+  top: 300px;
+  left: 90%;
+  width: 60px;
+}
+*/
