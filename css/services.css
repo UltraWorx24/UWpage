@@ -20,13 +20,13 @@ html, body {
 /* 2. Header, Nav, Footer */
 /* ============================================= */
 header {
-  background: linear-gradient(to right, #000000, #808080); /* Black to grey gradient */
-  padding: 1rem 0; /* Ensure initial padding is larger */
-  width: 100vw; /* Full width of the viewport */
-  position: fixed; /* Lock header to top */
+  background: linear-gradient(to right, #000000, #808080);
+  padding: 1rem 0;
+  width: 100vw;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensure header is above other content */
+  z-index: 1000;
   transition: padding 0.3s ease, background 0.3s ease;
 }
 
@@ -313,9 +313,9 @@ button:nth-child(7) {
 /* ============================================= */
 /*
    This section uses multiple background images.
-   The default background-attachment is "scroll" (normal behavior),
-   and JavaScript will add the "fixed-active" class when the section is in view,
-   switching the background-attachment to "fixed".
+   The default is set to "scroll", but when the section is half in view,
+   JavaScript adds the "fixed-active" class to switch background-attachment to "fixed".
+   Images are arranged with image 1 and image 4 stacked (with a small gap), and the other images side by side.
 */
 .services-gallery {
   position: relative;
@@ -323,35 +323,28 @@ button:nth-child(7) {
   height: 600px;
   margin: 2rem 0;
   background-image: 
-    url('../images/services.jpg'),
-    url('../images/services2.jpg'),
-    url('../images/services3.jpg'),
-    url('../images/services4.jpg'),
-    url('../images/services5.jpg');
+    url('../images/services.jpg'),     /* Image 1 */
+    url('../images/services2.jpg'),    /* Image 2 */
+    url('../images/services3.jpg'),    /* Image 3 */
+    url('../images/services4.jpg'),    /* Image 4, to be stacked under image 1 */
+    url('../images/services5.jpg');    /* Image 5 */
   background-repeat: no-repeat;
-  background-attachment: scroll; /* default behavior */
-  /* Updated positions for a tighter collage:
-     - Image 1 (services.jpg) at left 10% top 150px.
-     - Image 2 at left 50% top 150px.
-     - Image 3 at left 70% top 150px.
-     - Image 4 (services4.jpg) underneath image 1 at left 10% top 350px.
-     - Image 5 at left 50% top 350px. */
+  background-attachment: scroll; /* Default scroll behavior */
   background-position: 
-    left 10% top 150px,
-    left 50% top 150px,
-    left 70% top 150px,
-    left 10% top 350px,
-    left 50% top 350px;
-  /* Updated sizes – larger images (250px wide) */
+    left 10% top 150px,    /* Image 1 */
+    left 40% top 150px,    /* Image 2 */
+    left 60% top 150px,    /* Image 3 */
+    left 10% top 400px,    /* Image 4, stacked under Image 1 with a small gap */
+    left 40% top 400px;    /* Image 5 */
   background-size: 
-    250px auto,
-    250px auto,
-    250px auto,
-    250px auto,
-    250px auto;
+    250px auto,          /* Image 1 size */
+    250px auto,          /* Image 2 */
+    250px auto,          /* Image 3 */
+    250px auto,          /* Image 4 */
+    250px auto;          /* Image 5 */
 }
 
-/* When the gallery is in view, JS adds this class to fix the backgrounds */
+/* When the gallery is in view, JavaScript adds fixed-active to switch to fixed background */
 .services-gallery.fixed-active {
   background-attachment: fixed;
 }

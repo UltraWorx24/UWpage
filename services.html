@@ -8,6 +8,22 @@
   <link rel="stylesheet" href="css/services.css">
   <!-- Link to the JavaScript file -->
   <script src="script.js" defer></script>
+  <script>
+    // When the gallery section is at least half visible, add the 'fixed-active' class.
+    document.addEventListener("DOMContentLoaded", function () {
+      const gallery = document.querySelector('.services-gallery');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio >= 0.5) {
+            gallery.classList.add('fixed-active');
+          } else {
+            gallery.classList.remove('fixed-active');
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(gallery);
+    });
+  </script>
 </head>
 <body>
 
