@@ -312,63 +312,55 @@ button:nth-child(7) {
 }
 
 /* ============================================= */
-/* 9. Services Gallery (Fixed, Intertwined Photos) */
+/* 9. Services Gallery (Collage with Absolute Positioning) */
 /* ============================================= */
 .services-gallery {
-  position: relative;  /* Container for logical grouping */
+  position: relative; /* Establishes a reference for absolute positioning */
   width: 100%;
-  height: 600px;       /* Set overall gallery area height */
-  z-index: 0;
+  height: 600px; /* Set the height of the gallery section */
+  margin: 2rem 0; /* Optional spacing around the gallery */
+  overflow: hidden;
 }
 
-/* Fixed gallery images */
 .gallery-photo {
-  position: fixed;  /* Remains stationary when scrolling */
+  position: absolute; /* Position relative to .services-gallery */
   object-fit: cover;
   border: 3px solid #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
-  /* No negative z-index here to keep the images visible */
 }
 
 .gallery-photo:hover {
   transform: scale(1.05);
 }
 
-/* Individual image positions and smaller sizes for a collage effect */
+/* Adjust these values until the collage looks as desired */
 .services1 {
-  top: 150px;
+  top: 50px;
   left: 5%;
-  width: 60px;
-  z-index: 1;
+  width: 40px; /* Smaller size */
 }
 
 .services2 {
-  top: 180px;
+  top: 100px;
   left: 30%;
-  width: 70px;
-  z-index: 2;
+  width: 45px;
 }
 
 .services3 {
-  top: 150px;
+  top: 50px;
   left: 55%;
-  width: 80px;
-  z-index: 3;
+  width: 50px;
 }
 
 .services4 {
-  top: 210px;
+  top: 120px;
   left: 80%;
-  width: 50px;
-  z-index: 4;
+  width: 35px;
 }
 
-/* Optional: Uncomment if you need a fifth image */
-/*
 .services5 {
-  top: 240px;
+  top: 150px;
   left: 90%;
-  width: 40px;
-  z-index: 5;
+  width: 30px;
 }
