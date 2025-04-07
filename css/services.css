@@ -318,10 +318,8 @@ button:nth-child(7) {
   margin: 2rem 0;
   /* Apply five background images */
   background-image: 
-    url('../images/services.jpg'),
     url('../images/services2.jpg'),
     url('../images/services3.jpg'),
-    url('../images/services4.jpg'),
     url('../images/services5.jpg');
   background-repeat: no-repeat;
   /* Default behavior is scroll; JS will add fixed-active when needed */
