@@ -323,22 +323,20 @@ button:nth-child(7) {
     url('../images/services2.jpg'),
     url('../images/services3.jpg'),
     url('../images/services4.jpg');
-    url('../images/services5.jpg');
-
   background-repeat: no-repeat;
-  background-attachment: fixed; /* This makes all backgrounds fixed */
+  background-attachment: fixed; /* All backgrounds remain fixed when scrolling */
   /* Set positions for each image */
   background-position: 
     left 5% top 150px,
     left 30% top 200px,
     left 55% top 150px,
     left 80% top 250px;
-  /* Set sizes for each image */
+  /* Set smaller sizes for each image */
   background-size: 
-    80px auto,
-    90px auto,
-    100px auto,
-    70px auto;
+    40px auto,
+    45px auto,
+    50px auto,
+    35px auto;
 }
 
 /* Optional: Overlay heading styling */
