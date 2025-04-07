@@ -315,18 +315,18 @@ button:nth-child(7) {
 /* 9. Services Gallery (Collage with Absolute Positioning) */
 /* ============================================= */
 .services-gallery {
-  position: relative; /* Establishes a reference for absolute positioning */
+  position: relative;  /* Establishes a reference for absolute positioning */
   width: 100%;
-  height: 600px; /* Set the height of the gallery section */
-  margin: 2rem 0; /* Optional spacing around the gallery */
+  height: 600px;       /* Set the height of the gallery section */
+  margin: 2rem 0;      /* Optional spacing around the gallery */
   overflow: hidden;
 }
 
 .gallery-photo {
-  position: absolute; /* Position relative to .services-gallery */
+  position: absolute;  /* Position relative to .services-gallery */
   object-fit: cover;
   border: 3px solid #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -334,33 +334,33 @@ button:nth-child(7) {
   transform: scale(1.05);
 }
 
-/* Adjust these values until the collage looks as desired */
+/* Updated sizes and positions for a larger collage effect */
 .services1 {
   top: 50px;
   left: 5%;
-  width: 40px; /* Smaller size */
+  width: 150px;
 }
 
 .services2 {
-  top: 100px;
+  top: 120px;
   left: 30%;
-  width: 45px;
+  width: 170px;
 }
 
 .services3 {
-  top: 50px;
+  top: 80px;
   left: 55%;
-  width: 50px;
+  width: 190px;
 }
 
 .services4 {
-  top: 120px;
+  top: 180px;
   left: 80%;
-  width: 35px;
+  width: 160px;
 }
 
 .services5 {
-  top: 150px;
+  top: 220px;
   left: 90%;
-  width: 30px;
+  width: 140px;
 }
