@@ -27,31 +27,35 @@ header {
   top: 0;
   left: 0;
   z-index: 1000; /* Ensure header is above other content */
-  transition: padding 0.3s ease, background 0.3s ease; /* Smooth transitions */
+  transition: padding 0.3s ease, background 0.3s ease;
 }
 
 header.scrolled {
-  padding: 0.5rem 0; /* Reduced padding when scrolled */
-  background: linear-gradient(to right, #333333, #666666); /* Darker gradient */
+  padding: 0.5rem 0;
+  background: linear-gradient(to right, #333333, #666666);
 }
 
 .logo-large {
-  width: 200px; /* Large logo in header */
+  width: 200px;
   height: auto;
   margin-bottom: 0.5rem;
   transition: width 0.3s ease, height 0.3s ease;
 }
 
 header.scrolled .logo-large {
-  width: 100px; /* Smaller logo when scrolled */
+  width: 100px;
   height: auto;
+}
+
+nav {
+  margin-top: 1rem;
 }
 
 nav a {
   margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
-  color: #ff0000; /* Red nav links */
+  color: #ff0000;
 }
 
 nav a:hover {
@@ -59,18 +63,18 @@ nav a:hover {
 }
 
 footer {
-  background-color: #000; /* Black footer */
+  background-color: #000;
   padding: 1rem 0;
 }
 
 .logo-small {
-  width: 80px; /* Smaller logo in footer */
+  width: 80px;
   height: auto;
   margin-bottom: 0.5rem;
 }
 
 footer p {
-  color: #fff; /* White text in footer */
+  color: #fff;
   font-size: 0.9rem;
 }
 
@@ -78,7 +82,7 @@ footer p {
 /* 3. Light Grey Section (Second Footer) */
 /* ============================================= */
 .second-footer {
-  background-color: #f0f0f0; /* Light grey background */
+  background-color: #f0f0f0;
   padding: 1rem 0;
   text-align: center;
   display: flex;
@@ -92,7 +96,7 @@ footer p {
 }
 
 .second-footer .contact-info p {
-  color: #333; /* Dark grey text */
+  color: #333;
   font-size: 1rem;
   margin: 0.5rem 0;
 }
@@ -103,7 +107,7 @@ footer p {
 }
 
 .second-footer .certifications img {
-  height: 50px; /* Adjust size as needed */
+  height: 50px;
   margin-left: 0.9rem;
 }
 
@@ -112,10 +116,9 @@ footer p {
 /* ============================================= */
 main {
   padding: 2rem 1rem;
-  margin-top: 5rem; /* Avoid content behind fixed header */
+  margin-top: 5rem;
 }
 
-/* Keyframes for slow zoom animation (if used) */
 @keyframes slowZoom {
   0% {
     background-size: 100%;
@@ -152,17 +155,14 @@ form button:hover {
 /* 5. Responsiveness */
 /* ============================================= */
 @media (max-width: 768px) {
-  /* Adjust hero text size on mobile */
   .hero h1 {
     font-size: 1.5rem;
   }
-  /* Form fields full width on small screens */
   form input[type="text"],
   form input[type="email"],
   form textarea {
     width: 100%;
   }
-  /* Navigation spacing adjustments */
   nav a {
     display: inline-block;
     margin: 0.5rem;
@@ -191,7 +191,7 @@ form button:hover {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  text-align: left; /* Title and text left-aligned for clarity */
+  text-align: left;
 }
 
 .service-card:hover {
@@ -205,19 +205,17 @@ form button:hover {
   color: #333;
 }
 
-/* Hidden detail text */
 .service-detail {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
-  margin-top: 0; /* Start closed */
+  margin-top: 0;
   color: #555;
 }
 
-/* Reveal detail text when active */
 .service-card.active .service-detail {
   margin-top: 0.5rem;
-  max-height: 500px; /* Adjust as needed */
+  max-height: 500px;
   transition: max-height 0.6s ease;
 }
 
@@ -225,8 +223,8 @@ form button:hover {
 /* 7. Button Styles */
 /* ============================================= */
 button {
-  background: linear-gradient(to right, #ffffff, #d3d3d3); /* Default gradient */
-  color: #333; /* Dark text */
+  background: linear-gradient(to right, #ffffff, #d3d3d3);
+  color: #333;
   border: none;
   border-radius: 4px;
   padding: 0.75rem 1.5rem;
@@ -246,64 +244,63 @@ button:active {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Specific Gradients for Each Button */
 button:nth-child(1) {
-  background: linear-gradient(to right, #ffffff, #e0e0e0); /* Light grey */
+  background: linear-gradient(to right, #ffffff, #e0e0e0);
 }
 
 button:nth-child(2) {
-  background: linear-gradient(to right, #e0e0e0, #c0c0c0); /* Slightly darker grey */
+  background: linear-gradient(to right, #e0e0e0, #c0c0c0);
 }
 
 button:nth-child(3) {
-  background: linear-gradient(to right, #c0c0c0, #a0a0a0); /* Medium grey */
+  background: linear-gradient(to right, #c0c0c0, #a0a0a0);
 }
 
 button:nth-child(4) {
-  background: linear-gradient(to right, #a0a0a0, #808080); /* Darker grey */
+  background: linear-gradient(to right, #a0a0a0, #808080);
 }
 
 button:nth-child(5) {
-  background: linear-gradient(to right, #808080, #606060); /* Even darker grey */
+  background: linear-gradient(to right, #808080, #606060);
 }
 
 button:nth-child(6) {
-  background: linear-gradient(to right, #606060, #404040); /* Dark grey */
+  background: linear-gradient(to right, #606060, #404040);
 }
 
 button:nth-child(7) {
-  background: linear-gradient(to right, #404040, #202020); /* Very dark grey */
+  background: linear-gradient(to right, #404040, #202020);
 }
 
 /* ============================================= */
 /* 8. Kee Safety Partner Section */
 /* ============================================= */
 .kee-safety-partner {
-  background-color: #f9f9f9; /* Light grey background */
+  background-color: #f9f9f9;
   padding: 2rem 1rem;
   margin: 2rem auto;
   text-align: center;
-  border: 1px solid #ddd; /* Subtle border */
-  border-radius: 8px; /* Rounded corners */
-  max-width: 800px; /* Limit the width */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
 }
 
 .kee-safety-partner h2 {
   font-size: 1.8rem;
-  color: #cc0000; /* Red header color */
+  color: #cc0000;
   margin-bottom: 1rem;
 }
 
 .kee-safety-partner p {
   font-size: 1rem;
-  color: #555; /* Dark grey text */
+  color: #555;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
 .kee-safety-partner figure {
   margin: 0 auto;
-  max-width: 200px; /* Limit logo size */
+  max-width: 200px;
 }
 
 .kee-safety-partner img {
@@ -312,12 +309,17 @@ button:nth-child(7) {
 }
 
 /* ============================================= */
-/* 9. Services Gallery (Fixed Background Effect) */
+/* 9. Services Gallery (Fixed Background Collage) */
 /* ============================================= */
+/*
+   This section uses multiple background images with fixed attachment
+   to create a collage-like effect that remains fixed relative to the viewport.
+   Adjust the sizes and positions until the layout is as desired.
+*/
 .services-gallery {
   position: relative;
   width: 100%;
-  height: 600px; /* Adjust height as needed */
+  height: 600px;
   margin: 2rem 0;
   background-image: 
     url('../images/services.jpg'),
@@ -326,28 +328,26 @@ button:nth-child(7) {
     url('../images/services4.jpg'),
     url('../images/services5.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Images remain fixed relative to the viewport */
-  /* Positions for each image */
+  background-attachment: fixed;
   background-position: 
-    left 5% top 150px,
-    left 30% top 200px,
-    left 55% top 150px,
+    left 10% top 200px,
+    left 40% top 200px,
+    left 65% top 200px,
     left 80% top 250px,
     left 90% top 300px;
-  /* Updated sizes: each value multiplied by ~3x */
   background-size: 
-    450px auto,
-    510px auto,
-    570px auto,
-    480px auto,
-    420px auto;
+    150px auto,
+    150px auto,
+    150px auto,
+    150px auto,
+    150px auto;
 }
 
-/* Optional: Overlay heading styling for the gallery */
+/* Optional: Overlay heading for the gallery */
 .gallery-heading {
   position: relative;
-  z-index: 1; /* Ensure text appears above the backgrounds */
+  z-index: 1;
   padding-top: 20px;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
