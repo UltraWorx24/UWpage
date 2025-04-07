@@ -319,6 +319,7 @@ button:nth-child(7) {
   height: 600px; /* Adjust height as needed */
   /* Apply multiple background images; each image's position and size can be individually controlled */
   background-image: 
+    url('images/services.jpg'),
     url('images/services2.jpg'),
     url('images/services3.jpg'),
     url('images/services4.jpg'),
