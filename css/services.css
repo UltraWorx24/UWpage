@@ -314,7 +314,7 @@ button:nth-child(7) {
 .services-gallery {
   position: relative;
   width: 100%;
-  height: 600px; /* Adjust height as needed */
+  height: 600px; /* Adjust overall gallery height as needed */
   margin: 2rem 0;
   background-image: 
     url('../images/services.jpg'),
@@ -323,15 +323,20 @@ button:nth-child(7) {
     url('../images/services4.jpg'),
     url('../images/services5.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Images remain fixed relative to the viewport */
-  /* Positions for each image */
+  background-attachment: fixed; /* All images remain fixed relative to the viewport */
+  /* Updated positions:
+     - services.jpg: at left 10%, top 200px.
+     - services2.jpg: at left 40%, top 200px.
+     - services3.jpg: at left 65%, top 200px.
+     - services4.jpg: at left 80%, top 250px.
+     - services5.jpg: positioned directly underneath services.jpg (left 10%, top 550px) */
   background-position: 
     left 10% top 200px,
     left 40% top 200px,
     left 65% top 200px,
     left 80% top 250px,
-    left 90% top 300px;
-  /* Increased sizes for a larger collage effect */
+    left 10% top 550px;
+  /* Using 300px for each image size; adjust if needed */
   background-size: 
     300px auto,
     300px auto,
@@ -346,5 +351,5 @@ button:nth-child(7) {
   z-index: 1; /* Ensure text appears above the backgrounds */
   padding-top: 20px;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
