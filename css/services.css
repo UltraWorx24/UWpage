@@ -312,17 +312,39 @@ button:nth-child(7) {
 }
 
 /* ============================================= */
-/* 9. Services Gallery (Fixed, Intertwined Photos) */
+/* 9. Services Gallery with Fixed Background Effect */
 /* ============================================= */
-/* Gallery Container (optional) */
 .services-gallery {
-  position: relative; /* Container in normal flow */
-  width: 100%;
-  height: 600px;      /* Set overall height for the gallery area */
+  position: relative;
+  height: 600px; /* Adjust height as needed */
+  /* Apply multiple background images; each image's position and size can be individually controlled */
+  background-image: 
+    url('images/services2.jpg'),
+    url('images/services3.jpg'),
+    url('images/services4.jpg'),
+    url('images/services5.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Makes the background images stay in place when scrolling */
+  /* Set individual positions for each background image */
+  background-position: 
+    left 5% top 100px,
+    left 30% top 150px,
+    left 55% top 100px,
+    left 80% top 200px;
+  /* Set sizes for each background image */
+  background-size: 
+    200px auto,
+    220px auto,
+    240px auto,
+    180px auto;
 }
 
-/* Fixed gallery images */
-.gallery-photo {
-  position: fixed; /* Fixed relative*
+/* Optional: Styling for the gallery heading (if used) */
+.gallery-heading {
+  position: relative;
+  z-index: 1; /* Ensure the heading is above the background images */
+  padding-top: 20px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
 
-  
