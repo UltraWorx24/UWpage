@@ -311,15 +311,10 @@ button:nth-child(7) {
 /* ============================================= */
 /* 9. Services Gallery (Fixed Background Collage) */
 /* ============================================= */
-/*
-   This section uses multiple background images with fixed attachment
-   to create a collage-like effect that remains fixed relative to the viewport.
-   Adjust the sizes and positions until the layout is as desired.
-*/
 .services-gallery {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 600px; /* Adjust height as needed */
   margin: 2rem 0;
   background-image: 
     url('../images/services.jpg'),
@@ -328,26 +323,28 @@ button:nth-child(7) {
     url('../images/services4.jpg'),
     url('../images/services5.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Images remain fixed relative to the viewport */
+  /* Positions for each image */
   background-position: 
     left 10% top 200px,
     left 40% top 200px,
     left 65% top 200px,
     left 80% top 250px,
     left 90% top 300px;
+  /* Increased sizes for a larger collage effect */
   background-size: 
-    150px auto,
-    150px auto,
-    150px auto,
-    150px auto,
-    150px auto;
+    300px auto,
+    300px auto,
+    300px auto,
+    300px auto,
+    300px auto;
 }
 
-/* Optional: Overlay heading for the gallery */
+/* Optional: Overlay heading styling for the gallery */
 .gallery-heading {
   position: relative;
-  z-index: 1;
+  z-index: 1; /* Ensure text appears above the backgrounds */
   padding-top: 20px;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
