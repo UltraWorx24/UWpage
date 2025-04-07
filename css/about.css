@@ -118,3 +118,36 @@ footer {
     height: auto;
     margin-bottom: 0.5rem;
 }
+
+/* Light Grey Section (Second Footer) */
+.second-footer {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 1rem 0;
+    margin: 0; /* Remove any default margin */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second-footer .contact-info {
+    text-align: left;
+    margin-left: 0.9rem;
+}
+
+.second-footer .contact-info p {
+    color: #333;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.second-footer .certifications {
+    text-align: right;
+    margin-right: 0.9rem;
+}
+
+.second-footer .certifications img {
+    height: 50px; /* Adjust the size as needed */
+    margin-left: 0.9rem;
+}
+
