@@ -183,40 +183,54 @@ form button:hover {
   padding: 0 1rem;
 }
 
-.service-card {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 1.5rem;
-  border: 1px solid #eee;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  text-align: left;
+.service-card:nth-child(1) {
+  background: linear-gradient(to bottom right, #2b2b2b, #353535);
 }
 
-.service-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.service-card:nth-child(2) {
+  background: linear-gradient(to bottom right, #333333, #3e3e3e);
 }
 
-.service-card h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+.service-card:nth-child(3) {
+  background: linear-gradient(to bottom right, #3a3a3a, #454545);
 }
 
-.service-detail {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  margin-top: 0;
-  color: #555;
+.service-card:nth-child(4) {
+  background: linear-gradient(to bottom right, #414141, #4d4d4d);
 }
 
-.service-card.active .service-detail {
-  margin-top: 0.5rem;
-  max-height: 500px;
-  transition: max-height 0.6s ease;
+.service-card:nth-child(5) {
+  background: linear-gradient(to bottom right, #484848, #545454);
+}
+
+.service-card:nth-child(6) {
+  background: linear-gradient(to bottom right, #b3b3b3, #cccccc);
+}
+
+.service-card:nth-child(7) {
+  background: linear-gradient(to bottom right, #c86b6b, #cf7575);
+}
+
+.service-card:nth-child(8) {
+  background: linear-gradient(to bottom right, #d06a6a, #d77373);
+}
+
+.service-card:nth-child(9) {
+  background: linear-gradient(to bottom right, #d95f5f, #e06565);
+}
+
+.service-card:nth-child(10) {
+  background: linear-gradient(to bottom right, #e24a4a, #ea5858);
+}
+
+.service-card:nth-child(11) {
+  background: linear-gradient(to bottom right, #ec3434, #f23f3f);
+}
+
+.service-card:nth-child(12) {
+  background: linear-gradient(to bottom right, #ff0000, #ff4d4d);
+}
+
 }
 
 /* ============================================= */
