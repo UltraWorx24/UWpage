@@ -183,55 +183,59 @@ form button:hover {
   padding: 0 1rem;
 }
 
+/* ============================================= */
+/* Service Card Gradient Background Overrides for 12 Cards */
+/* ============================================= */
+/* Service Card Gradient Background Overrides */
+/* Diagonal gradients from white (top left) to progressively darker grey (bottom right) */
 .service-card:nth-child(1) {
-  background: linear-gradient(to bottom right, #2b2b2b, #353535);
+  background: linear-gradient(to bottom right, #ffffff, #ffffff);
 }
 
 .service-card:nth-child(2) {
-  background: linear-gradient(to bottom right, #333333, #3e3e3e);
+  background: linear-gradient(to bottom right, #ffffff, #fafafa); /* #fafafa ≈ (250,250,250) */
 }
 
 .service-card:nth-child(3) {
-  background: linear-gradient(to bottom right, #3a3a3a, #454545);
+  background: linear-gradient(to bottom right, #ffffff, #f5f5f5); /* (245,245,245) */
 }
 
 .service-card:nth-child(4) {
-  background: linear-gradient(to bottom right, #414141, #4d4d4d);
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0); /* (240,240,240) */
 }
 
 .service-card:nth-child(5) {
-  background: linear-gradient(to bottom right, #484848, #545454);
+  background: linear-gradient(to bottom right, #ffffff, #ebebeb); /* (235,235,235) */
 }
 
 .service-card:nth-child(6) {
-  background: linear-gradient(to bottom right, #b3b3b3, #cccccc);
+  background: linear-gradient(to bottom right, #ffffff, #e6e6e6); /* (230,230,230) */
 }
 
 .service-card:nth-child(7) {
-  background: linear-gradient(to bottom right, #c86b6b, #cf7575);
+  background: linear-gradient(to bottom right, #ffffff, #e1e1e1); /* (225,225,225) */
 }
 
 .service-card:nth-child(8) {
-  background: linear-gradient(to bottom right, #d06a6a, #d77373);
+  background: linear-gradient(to bottom right, #ffffff, #dcdcdc); /* (220,220,220) */
 }
 
 .service-card:nth-child(9) {
-  background: linear-gradient(to bottom right, #d95f5f, #e06565);
+  background: linear-gradient(to bottom right, #ffffff, #d7d7d7); /* (215,215,215) */
 }
 
 .service-card:nth-child(10) {
-  background: linear-gradient(to bottom right, #e24a4a, #ea5858);
+  background: linear-gradient(to bottom right, #ffffff, #d2d2d2); /* (210,210,210) */
 }
 
 .service-card:nth-child(11) {
-  background: linear-gradient(to bottom right, #ec3434, #f23f3f);
+  background: linear-gradient(to bottom right, #ffffff, #cdcdcd); /* (205,205,205) */
 }
 
 .service-card:nth-child(12) {
-  background: linear-gradient(to bottom right, #ff0000, #ff4d4d);
+  background: linear-gradient(to bottom right, #ffffff, #cccccc); /* (204,204,204) */
 }
 
-}
 
 /* ============================================= */
 /* 7. Button Styles */
